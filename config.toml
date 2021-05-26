@@ -5,7 +5,6 @@ theme = "vncnt-hugo"
 title = "Soarch Zone"
 enableRobotsTXT = true
 hasCJKLanguage = true
-copyright = "abc"
 
 [params]
 ### theme common
