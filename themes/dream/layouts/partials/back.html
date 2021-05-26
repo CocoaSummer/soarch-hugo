@@ -12,12 +12,12 @@
   </div>
   {{ end }}
 
-  <!-- <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
     <article class="ui segment">
       <div class="ui medium header">{{ i18n "socialLinks" }}</div>
       {{ partial "socials.html" (dict "Site" .Site "IconSize" "large") }}
     </article>
-  </div> -->
+  </div>
 
   <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
     {{ if .Site.Copyright }}
@@ -29,7 +29,7 @@
 
   {{ if findRE "posts/.+" .RelPermalink }}
   {{ else }}
-  {{ if and .Site.DisqusShortname }}
+  {{ if and .Site.DisqusShortname  }}
   <div class="sixteen wide mobile eight wide tablet eight wide computer column dream-column">
     <article class="ui segment">
       <div id="disqus_thread"></div>
@@ -44,15 +44,14 @@
           this.page.identifier = '/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
         };
 
-        (function () { // DON'T EDIT BELOW THIS LINE
+        (function() { // DON'T EDIT BELOW THIS LINE
           var d = document, s = d.createElement('script');
           s.src = 'https://' + '{{ .Site.DisqusShortname }}' + '.disqus.com/embed.js';
           s.setAttribute('data-timestamp', +new Date());
           (d.head || d.body).appendChild(s);
         })();
       </script>
-      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
-          Disqus.</a></noscript>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </article>
   </div>
   {{ end }}
