@@ -62,9 +62,9 @@ steps:
         - DOCKER_USERNAME
         - DOCKER_PASSWORD
       script:
-        - cd /root/docker-compose/soarch-api/
+        - cd /root/docker-compose/soarch-hugo/
         - echo $DOCKER_PASSWORD | docker login $REGISTRY_URL --username=$DOCKER_USERNAME --password-stdin
-        - docker pull $REGISTRY_URL/soarch/api:${DRONE_TAG}
+        - docker pull $REGISTRY_URL/soarch/hugo:${DRONE_TAG}
         - docker-compose down
         - docker-compose up -d --build
 image_pull_secrets:
