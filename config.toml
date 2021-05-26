@@ -8,9 +8,10 @@ hasCJKLanguage = true
 
 [params]
 ### theme common
-avatar = "/img/mpcode.jpg"
 author = "Summer Cocoa"
 description = "Soarch Zone"
+favicon = "img/favicon.ico"
+avatar = "img/mpcode.jpg"
 
 # ### dream theme
 # headerTitle = "SummerCocoa的小窝"
