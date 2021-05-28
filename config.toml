@@ -1,49 +1,17 @@
 baseURL = "http://127.0.0.1:80/"
-languageCode = "en-us"
 defaultContentLanguage = "zh"
 theme = "vncnt-hugo"
-title = "Soarch Zone"
-enableRobotsTXT = true
-hasCJKLanguage = true
+title = "Soarch空间"
 
 [params]
 ### theme common
-author = "Summer Cocoa"
-description = "Soarch Zone"
+author = "Soarch空间"
+description = "Soarch空间"
 favicon = "img/favicon.ico"
 avatar = "img/mpcode.jpg"
 
-# ### dream theme
-# headerTitle = "SummerCocoa的小窝"
-# motto = "与其感慨路难行，不如马上出发。"
-# email = "1098517478@qq.com"
-
-# showSummaryCoverInPost = false
-# hasTwitterEmbed = false
-# fixedNav = true
-# siteStartYear = 2020
-# shareInAside = false
-# reversePostAndAside = true
-# enableSearch = false
-# rss = false
-
-# # dark mode
-# backgroundDark = "black"
-# darkNav = true
-# dark404 = true
-
-# [params.advanced]
-# customCSS = ["css/detail.css"]
-# customJS = []
-
 ### vncnt-hugo theme
-bio = "Personal Small Tool  \nPlease Use WeChat Scan It"
+bio = "相信我，这里很无聊  \n好奇？扫Ta"
 
 [params.contact]
 github = "https://github.com/CocoaSummer"
-
-# [params.contact.email]
-# name = "email" # may be omitted. defaults to key name
-# icon = "envelope" # may be omitted. defaults to key name
-# style = "fas" # may be omitted. default = "fas"
-# link = "mailto:1098517478@qq.com"
